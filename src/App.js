@@ -32,7 +32,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard lots={lots} />} />
             <Route path="/addNewLot" element={<AddNewLot />} />
-            <Route path="/forgingList" element={<ForgingList />} />
+            <Route path="/forgingList" element={<ForgingList lots={lots} />} />
           </Routes>
         </BrowserRouter>
       </main>

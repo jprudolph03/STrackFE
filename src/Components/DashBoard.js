@@ -14,7 +14,7 @@ function DashBoard(props) {
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Forgin</th>
+              <th scope="col">Forging</th>
               <th scope="col">Pressing</th>
               <th scope="col">Tapping</th>
               <th scope="col">Wash</th>
