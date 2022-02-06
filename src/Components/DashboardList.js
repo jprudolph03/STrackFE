@@ -5,6 +5,7 @@ function DashboardList(props) {
     <>
       <tr>
         <td>{props.lotNum}</td>
+        <td>54,241</td>
         <td>random</td>
         <td>data</td>
         <td>placeholder</td>

@@ -25,17 +25,17 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
           <SidebarNav />
           <Routes>
             <Route path="/" element={<Dashboard lots={lots} />} />
             <Route path="/addNewLot" element={<AddNewLot />} />
             <Route path="/forgingList" element={<ForgingList lots={lots} />} />
           </Routes>
-        </BrowserRouter>
-      </main>
+        </main>
+      </BrowserRouter>
     </div>
   );
 }

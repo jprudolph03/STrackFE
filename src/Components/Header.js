@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <div>
       <header className="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+        <a href="/" className="navbar-brand col-md-3 col-lg-2 me-0 px-3">
           Scrap Tracker
         </a>
         <button
