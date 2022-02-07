@@ -5,8 +5,8 @@ import "./AddNewLot.css";
 function AddNewLot() {
   const handleNewLot = (e) => {
     e.preventDefault();
-    const newLot = e.target[0].value;
-    console.log(newLot);
+    // const newLot = e.target[0].value;
+    // console.log(newLot);
     axios
       .post("https://scrap-tracker.herokuapp.com/api/lot", {
         num: e.target[0].value,
@@ -37,6 +37,7 @@ function AddNewLot() {
           <label className="form-label">Total Coil Weight</label>
           <input
             type="number"
+            step="0.01"
             className="form-control"
             id="newLotNumber"
             placeholder="Total Coil Weight"
@@ -44,6 +45,7 @@ function AddNewLot() {
           <label className="form-label">STD Coil Loss</label>
           <input
             type="number"
+            step="0.01"
             className="form-control"
             id="newLotNumber"
             placeholder="STD Coil Loss"
